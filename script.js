@@ -5,7 +5,7 @@ botaoMostraPalavras.addEventListener('click', mostraTermosPrincipais);
 function mostraTermosPrincipais (){
  const texto = document.querySelector('#entrada-de-texto').value;
  const campoResultado = document.querySelector('#resultado-palavrachave')
- const palavrasChave = processaTexto(texto);
+ const palavrasChave = extraiTexto(texto);
 
  campoResultado.textContent = palavrasChave.join(", ");
 }

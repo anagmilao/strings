@@ -10,7 +10,7 @@ function mostraTermosPrincipais (){
  campoResultado.textContent = palavrasChave.join(", ");
 }
 
-function processaTexto(texto){
+function extraiTexto(texto){
     let palavras = texto.split(/\P{L}+/u);
     return palavras;
 }
